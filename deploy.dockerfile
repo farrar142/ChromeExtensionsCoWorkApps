@@ -1,4 +1,4 @@
-FROM node:16-alpine AS builder
+FROM node:12-alpine AS builder
 
 RUN apk --no-cache add --virtual builds-deps build-base python
 
@@ -14,7 +14,7 @@ COPY . .
 # build application
 RUN npm run build
 
-FROM node:16-alpine
+FROM node:12-alpine
 
 WORKDIR /usr/src/app
 
