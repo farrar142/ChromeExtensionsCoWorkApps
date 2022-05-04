@@ -1,1 +1,1 @@
-docker-compose -f docker-compose-deploy.yml up --build -d --force-rm
+docker-compose  --force-rm -f docker-compose-deploy.yml up --build -d
