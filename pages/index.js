@@ -14,7 +14,6 @@ const TODOPAGE = 2;
 const TEST = 3;
 export default function (props) {
   const [token, setToken] = useToken();
-  console.log(token);
   const [page, setPage] = useState(1);
   const [accountPage, setAccountPage] = useState(0);
   const setSsrCompleted = useSsrComplectedState();
