@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "My New Extension",
+  "short_name": "my-extension",
+  "version": "1.0.0",
+  "description": "My Extension",
+  "icons": {},
+  "permissions": ["identity"],
+  "action": {
+    "default_title": "My Extesnion",
+    "default_popup": "index.html"
+  },
+  "options_page": "index.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi/ikdMzommaZuaVJjNCWXFv3pSQIiKcFuISqZkrarC3Bj2vXOky6ej32ovr+XZR75YLYnhXWvfi2xbULwUS/Gut1HH1mkg4MgG9EtlOwdSE+q2GPHi94SKHFvHAZrLSieCtaJbrdFopjD6AkrGWDzwOAoWFlKrF/+7u+jGqMOjgenqhspBWZR3M66vgVtvdDNEXK2fIZn0eM+9ZRgGrT2HOVhiyw8fJ04LOPlGIxa7T/c58bOCIsEiGc+tKS+5tt9sOGGo3YR/1+ixDKFFPjgKjrKdsjtflRSqPUmsnPAr0Z/AeUw7NkDkMdJi4Dsz6gVDU0uDOWn4EVEtlzl3TIzwIDAQAB",
+  "oauth2": {
+    "client_id": "674fee8e9be76f2d12f56b8058d2ec92",
+    "scopes": [
+      "https://todobackend.honeycombpizza.link/api/kakao_callback&response_type=code"
+    ]
+  }
+}
