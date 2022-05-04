@@ -1,1 +1,1 @@
-npm dist
+npm run dist
