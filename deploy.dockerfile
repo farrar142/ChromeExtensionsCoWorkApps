@@ -69,7 +69,7 @@ COPY --from=builder /usr/src/app/package.json ./package.json
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /usr/src/app/.next ./.next
 COPY ./deploy_command.sh ./deploy_command.sh
-# COPY --from=builder --chown=nextjs:nodejs /usr/src/app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /usr/src/app/node_modules ./node_modules
 
 USER nextjs
 
