@@ -1,6 +1,6 @@
 FROM node:12-alpine AS builder
 
-RUN apk --no-cache add --virtual builds-deps build-base python
+RUN apk update && apk add python make g++ && rm -rf /var/cache/apk/*
 
 WORKDIR /usr/src/app
 
