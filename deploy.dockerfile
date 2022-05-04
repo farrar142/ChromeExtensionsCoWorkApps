@@ -18,7 +18,7 @@ FROM node:16-alpine
 
 WORKDIR /usr/src/app
 
-COPY --from=builder /usr/src/app/out ./out
+COPY --from=builder /usr/src/app/.next ./.next
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 
 EXPOSE 3001
