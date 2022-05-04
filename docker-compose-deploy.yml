@@ -6,7 +6,7 @@ services:
       interval: 1s
       retries: 30
       start_period: 60s
-    build: .
+    build: ./deploy.dockerfile
     container_name: ${CONTAINER_NAME}
     user: root
     entrypoint: sh deploy_command.sh
